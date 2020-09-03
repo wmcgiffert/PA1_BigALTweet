@@ -21,5 +21,23 @@ namespace PA_1
             inFile.Close();
             return myPost;
         }
+        public static List<Post> SavePost()
+        {
+            List<Post> myPost = new List<Post>();
+            //Opens the file
+            StreamWriter outFile = new StreamWriter("Posts.txt");
+
+            foreach(Post post in myPost)
+            {
+                outFile.WriteLine(post.ToString());
+            }
+
+
+            //Closes the File
+            outFile.Close();
+
+            return myPost;
+
+        }
     }
 }

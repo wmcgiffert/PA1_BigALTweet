@@ -8,5 +8,10 @@ namespace PA_1
         public Guid UserID {get; set;}
         public string PostMessage {get; set;}
         public DateTime Time {get; set;}
+
+        public override string ToString()
+        {
+            return this.UserID + "#" + this.PostMessage + "#" + Time;
+        } 
     }
 }
