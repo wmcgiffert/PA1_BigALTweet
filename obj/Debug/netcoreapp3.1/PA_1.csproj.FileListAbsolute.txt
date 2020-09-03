@@ -2,3 +2,12 @@ C:\Users\gmac2\source\repos\MIS 321\PA_1\obj\Debug\netcoreapp3.1\PA_1.csprojAsse
 C:\Users\gmac2\source\repos\MIS 321\PA_1\obj\Debug\netcoreapp3.1\PA_1.AssemblyInfoInputs.cache
 C:\Users\gmac2\source\repos\MIS 321\PA_1\obj\Debug\netcoreapp3.1\PA_1.AssemblyInfo.cs
 C:\Users\gmac2\source\repos\MIS 321\PA_1\obj\Debug\netcoreapp3.1\PA_1.csproj.CoreCompileInputs.cache
+C:\Users\gmac2\source\repos\MIS 321\PA_1\bin\Debug\netcoreapp3.1\PA_1.exe
+C:\Users\gmac2\source\repos\MIS 321\PA_1\bin\Debug\netcoreapp3.1\PA_1.deps.json
+C:\Users\gmac2\source\repos\MIS 321\PA_1\bin\Debug\netcoreapp3.1\PA_1.runtimeconfig.json
+C:\Users\gmac2\source\repos\MIS 321\PA_1\bin\Debug\netcoreapp3.1\PA_1.runtimeconfig.dev.json
+C:\Users\gmac2\source\repos\MIS 321\PA_1\bin\Debug\netcoreapp3.1\PA_1.dll
+C:\Users\gmac2\source\repos\MIS 321\PA_1\bin\Debug\netcoreapp3.1\PA_1.pdb
+C:\Users\gmac2\source\repos\MIS 321\PA_1\obj\Debug\netcoreapp3.1\PA_1.dll
+C:\Users\gmac2\source\repos\MIS 321\PA_1\obj\Debug\netcoreapp3.1\PA_1.pdb
+C:\Users\gmac2\source\repos\MIS 321\PA_1\obj\Debug\netcoreapp3.1\PA_1.genruntimeconfig.cache

@@ -14,7 +14,7 @@ namespace PA_1
             while(line !=null)
             {
                 string[] temp = line.Split("#");
-                myPost.Add(new Post(){UserID = Guid.Parse(temp[0]),  PostMessage = temp[1], Time = DateTime.Parse(temp[2])});
+                myPost.Add(new Post(){PostID = Guid.Parse(temp[0]),  PostMessage = temp[1], Time = DateTime.Parse(temp[2])});
                 line = inFile.ReadLine(); //update read
             }
 
