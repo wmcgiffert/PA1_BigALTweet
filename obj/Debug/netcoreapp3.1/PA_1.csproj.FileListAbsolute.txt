@@ -1,0 +1,4 @@
+C:\Users\gmac2\source\repos\MIS 321\PA_1\obj\Debug\netcoreapp3.1\PA_1.csprojAssemblyReference.cache
+C:\Users\gmac2\source\repos\MIS 321\PA_1\obj\Debug\netcoreapp3.1\PA_1.AssemblyInfoInputs.cache
+C:\Users\gmac2\source\repos\MIS 321\PA_1\obj\Debug\netcoreapp3.1\PA_1.AssemblyInfo.cs
+C:\Users\gmac2\source\repos\MIS 321\PA_1\obj\Debug\netcoreapp3.1\PA_1.csproj.CoreCompileInputs.cache

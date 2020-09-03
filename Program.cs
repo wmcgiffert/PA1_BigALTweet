@@ -7,7 +7,7 @@ namespace PA_1
     {
         static void Main(string[] args)
         {
-            // List<Post> tweet = Posts.ImportData();
+            List<Post> tweet = PostFile.GetPosts();
         }
     }
 }
