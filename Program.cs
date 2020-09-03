@@ -15,6 +15,7 @@ namespace PA_1
         }
          static void Menu()
         {
+            List<Post> tweet = PostFile.GetPosts();
             bool exit = false;
 
 
@@ -43,12 +44,12 @@ namespace PA_1
                 if (selection == 1)
                 {
                     Console.WriteLine("Show All Post");
-                    // ShowAllPost();
+                    Post.ShowAllPost(tweet);
                 }
                 else if (selection == 2)
                 {
                     Console.WriteLine("Add Post");
-                    // AddPost();
+                    Post.AddPost(tweet);
                 }
                 else if (selection == 3)
                 {
@@ -60,7 +61,14 @@ namespace PA_1
                     exit = true;
                     Console.WriteLine("Thank you. Have a nice day!");
                 }
-
+                // static void ShowAllPost()
+                // {
+                //     List<Post> tweet = PostFile.GetPosts();
+                //     foreach (Post posts in tweet)
+                //     {
+                //         Console.WriteLine($"{posts.PostID} : {posts.PostMessage} : {posts.Time}");
+                //     }
+                // }
                 
             }
 

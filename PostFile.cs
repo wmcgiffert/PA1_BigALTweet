@@ -21,13 +21,12 @@ namespace PA_1
             inFile.Close();
             return myPost;
         }
-        public static List<Post> SavePost()
+        public static void SavePost(List<Post> x)
         {
-            List<Post> myPost = new List<Post>();
             //Opens the file
-            StreamWriter outFile = new StreamWriter("Posts.txt");
+            StreamWriter outFile = new StreamWriter("Posts2.txt");
 
-            foreach(Post post in myPost)
+            foreach(Post post in x)
             {
                 outFile.WriteLine(post.ToString());
             }
@@ -35,8 +34,6 @@ namespace PA_1
 
             //Closes the File
             outFile.Close();
-
-            return myPost;
 
         }
     }

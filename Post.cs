@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.IO;
 using System;
 
 namespace PA_1
@@ -16,6 +17,35 @@ namespace PA_1
         public int CompareTo(Post temp)
         {
             return this.PostID.CompareTo(temp.PostID);
+        }
+        public static int CompareByDate(Post x, Post y)
+        {
+            return x.Time.CompareTo(y.Time);
+        }
+        public static void ReverseSort(List<Post> tweet)
+        {
+            tweet.Sort(Post.CompareByDate);
+            tweet.Reverse();
+            ShowAllPost(tweet);
+        }
+        public static void ShowAllPost(List<Post> tweet)
+        {
+            
+            foreach (Post posts in tweet)
+            {
+                Console.WriteLine($"{posts.PostID} : {posts.PostMessage} : {posts.Time}");
+            }
+            
+        }
+        public static void AddPost(List<Post> tweet)
+        {
+            Console.WriteLine("Please enter your tweet");
+            string userTweet = Console.ReadLine();
+
+            tweet.Add(new Post(){PostID = Guid.NewGuid(),  PostMessage = userTweet, Time = DateTime.Now});
+
+            ReverseSort(tweet);
+            PostFile.SavePost(tweet);
         }
     }
 }
