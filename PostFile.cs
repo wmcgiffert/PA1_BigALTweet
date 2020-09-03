@@ -24,7 +24,7 @@ namespace PA_1
         public static void SavePost(List<Post> x)
         {
             //Opens the file
-            StreamWriter outFile = new StreamWriter("Posts2.txt");
+            StreamWriter outFile = new StreamWriter("Posts.txt");
 
             foreach(Post post in x)
             {
