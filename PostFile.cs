@@ -8,8 +8,19 @@ namespace PA_1
         public static List<Post> GetPosts()
         {
             List<Post> myPost = new List<Post>();
-            StreamReader inFile = new StreamReader("Posts.txt");
-            
+            StreamReader inFile = null;
+
+
+            //Try Catch Method
+            try
+            {
+                inFile = new StreamReader("Posts.txt");
+            }
+            catch (System.Exception e)
+            {
+                Console.WriteLine($"File not found!",e);
+                return myPost;
+            }
             string line = inFile.ReadLine(); //Primming Read
             while(line !=null)
             {
