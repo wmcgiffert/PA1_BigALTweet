@@ -54,22 +54,14 @@ namespace PA_1
                 else if (selection == 3)
                 {
                     Console.WriteLine("Delete Post");
-                    // DeletePost();
+                    Post.DeletePost(tweet);
                 }
                 else if (selection == 4)
                 {
                     exit = true;
                     Console.WriteLine("Thank you. Have a nice day!");
                 }
-                // static void ShowAllPost()
-                // {
-                //     List<Post> tweet = PostFile.GetPosts();
-                //     foreach (Post posts in tweet)
-                //     {
-                //         Console.WriteLine($"{posts.PostID} : {posts.PostMessage} : {posts.Time}");
-                //     }
-                // }
-                
+                                
             }
 
         }

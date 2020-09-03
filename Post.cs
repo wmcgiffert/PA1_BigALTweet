@@ -33,16 +33,57 @@ namespace PA_1
             
             foreach (Post posts in tweet)
             {
-                Console.WriteLine($"{posts.PostID} : {posts.PostMessage} : {posts.Time}");
+                Console.WriteLine($"Post ID :{posts.PostID} :Tweet: {posts.PostMessage} :Date & Time: {posts.Time}");
             }
             
         }
         public static void AddPost(List<Post> tweet)
         {
+            Console.WriteLine("");
             Console.WriteLine("Please enter your tweet");
+            Console.WriteLine("");
+
             string userTweet = Console.ReadLine();
 
             tweet.Add(new Post(){PostID = Guid.NewGuid(),  PostMessage = userTweet, Time = DateTime.Now});
+
+            ReverseSort(tweet);
+            PostFile.SavePost(tweet);
+        }
+        public static void DeletePost(List<Post> tweet)
+        {
+            ShowAllPost(tweet);
+            Console.WriteLine("Please enter the Post Id you would like to delete");
+            
+            string temp = Console.ReadLine();
+            Guid selection;
+
+            bool valid = Guid.TryParse(temp, out selection);
+            while(valid == false)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Error Please enter a valid Post ID");
+                Console.WriteLine("");
+
+                temp = Console.ReadLine();
+                valid = Guid.TryParse(temp, out selection);
+
+            }
+            
+            // Guid selection = Guid.Parse(Console.ReadLine());
+            
+
+            int index = tweet.FindIndex(x=> x.PostID == selection);
+            if(index != -1)
+            {
+                tweet.RemoveAt(index);
+            }else
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Could not find Post ID");
+                Console.WriteLine("");
+            }
+            
 
             ReverseSort(tweet);
             PostFile.SavePost(tweet);
