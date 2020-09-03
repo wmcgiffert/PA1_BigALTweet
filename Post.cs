@@ -70,8 +70,6 @@ namespace PA_1
 
             }
             
-            // Guid selection = Guid.Parse(Console.ReadLine());
-            
 
             int index = tweet.FindIndex(x=> x.PostID == selection);
             if(index != -1)
